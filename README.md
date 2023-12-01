@@ -124,7 +124,7 @@ All the magic happens in the file `gitprofile.config.js`. Open it and modify it 
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
+    username: 'suign', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
     limit: 8, // How many projects to display.
     exclude: {
@@ -229,14 +229,11 @@ const config = {
     // Hides the theme change switch
     // Useful if you want to support a single color mode
     disableSwitch: false,
-
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: true,
-
     // Hide the ring in Profile picture
     hideAvatarRing: false,
-
     // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
@@ -346,30 +343,9 @@ const config = {
 
 Besides tracking visitors, it will track `click events` on projects and blog posts, and send them to Google Analytics.
 
-### Hotjar
-
-**GitProfile** supports [hotjar](https://www.hotjar.com) to track visitor interaction and behavior. If you do not want to use Hotjar, keep the `id` empty.
-
-```js
-// gitprofile.config.js
-const config = {
-  // ...
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
-};
-```
-
 ### SEO
 
 Meta tags will be auto-generated from configs dynamically. However, you can also manually add meta tags in `public/index.html`.
-
-### PWA
-
-GitProfile is PWA enabled. The site can be installed as a Progressive Web App.
-
-![PWA](https://github.com/arifszn/gitprofile/assets/45073703/9dc7cc5c-4262-4445-a7a5-1e3566ef43fa)
 
 ### Avatar and Bio
 
@@ -384,22 +360,22 @@ You can link your social media services you're using, including LinkedIn, Twitte
 const config = {
   // ...
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'suign',
+    twitter: 'suign',
+    mastodon: '',
     facebook: '',
-    instagram: '',
+    instagram: 'jabella.e',
     youtube: '',
     dribbble: '',
     behance: '',
-    medium: '',
+    medium: 'suign',
     dev: '',
     stackoverflow: '',
     skype: '',
     telegram: '',
-    website: '',
+    website: 'abellae.me',
     phone: '',
-    email: '',
+    email: 'me@neurons.me',
   },
 };
 ```
@@ -554,19 +530,9 @@ const config = {
 
 ![Blog](https://arifszn.netlify.app/assets/img/hosted/gitprofile/blog.png)
 
-The posts are fetched by [blog.js](https://github.com/arifszn/blog.js).
-
-## 💖 Support
+## Support
 
 <p>You can show your support by starring this project. ★</p>
-<a href="https://github.com/arifszn/gitprofile/stargazers">
-  <img src="https://img.shields.io/github/stars/arifszn/gitprofile?style=social" alt="Github Star">
-</a>
-
-## 💡 Contribute
-
-To contribute, see the [Contributing guide](https://github.com/arifszn/gitprofile/blob/main/CONTRIBUTING.md).
-
 ## 📄 License
 
 [MIT](https://github.com/arifszn/gitprofile/blob/main/LICENSE)
