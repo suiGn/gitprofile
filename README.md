@@ -25,8 +25,6 @@ These instructions will get you a copy of the project and deploy your portfolio 
   - If you want to host your portfolio at `https://<USERNAME>.github.io/<REPO_NAME>` (e.g. `https://<USERNAME>.github.io/portfolio`), rename your forked repository to `<REPO_NAME>` (e.g. `portfolio`) in GitHub.
 - **Enable workflows:** Go to your repo's **Actions** tab and enable workflows.
 
-  ![Workflows](https://arifszn.netlify.app/assets/img/hosted/gitprofile/workflows.png)
-
 - **Base Value:** Open `vite.config.js`, and change `base`'s value.
 
   - If you are deploying to `https://<USERNAME>.github.io`, set `base` to `'/'`.
