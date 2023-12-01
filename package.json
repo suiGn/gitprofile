@@ -1,5 +1,5 @@
 {
-  "name": "@suign/portfolio",
+  "name": "portfolio",
   "description": "Create an automatic portfolio based on GitHub profile",
   "version": "2.6.0",
   "license": "MIT",
