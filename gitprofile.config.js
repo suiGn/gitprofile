@@ -11,9 +11,7 @@ const config = {
     },
   },
   social: {
-    linkedin: 'suign',
     instagram: 'jabella.e',
-    medium: 'suign',
     website: 'https://neurons.me'
   },
   resume: {
