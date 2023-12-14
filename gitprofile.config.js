@@ -25,7 +25,10 @@ const config = {
     'React',
     'React Native',
     'Node.js',
-    'Next.js'
+    'Next.js',
+    'Express.js',
+    'PostgreSQL',
+    'Octave'
   ],
   experiences: [
     {
@@ -69,17 +72,25 @@ const config = {
       degree: 'Piloto Helicoptero Privado',
       from: '2012',
       to: '2013',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
+    }
   ],
  
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
+    {
+      title: 'neurons.me',
+      description:
+        '.',
+      imageUrl: 'public/green_neurons_logo.png',
+      link: 'https://neurons.me',
+    },
+    {
+      title: 'DelPaís.mx',
+      description:
+        'Diversos aspectos de la sociedad: cultura, educación, periodismo, música y arte.',
+      imageUrl: 'public/representa_mexicana_siembra.delpais.mx.png',
+      link: 'https://delpais.mx',
+    },
     {
       title: 'FullTrailer',
       description:
@@ -93,21 +104,6 @@ const config = {
         'OrgBoat will give you the tools you need to establish the foundation of any organization.',
       imageUrl: 'public/orgboat_portfolio.png',
       link: 'https://orgboat.me',
-    },
-    {
-      title: 'DelPaís.mx',
-      description:
-        'Diversos aspectos de la sociedad: cultura, educación, periodismo, música y arte.',
-      imageUrl: 'public/representa_mexicana_siembra.delpais.mx.png',
-      link: 'https://delpais.mx',
-    },
-    
-    {
-      title: 'neurons.me',
-      description:
-        'Diversos aspectos de la sociedad: cultura, educación, periodismo, música y arte.',
-      imageUrl: 'public/green_neurons_logo.png',
-      link: 'https://neurons.me',
     }
   ],
   // Display blog posts from your medium or dev account. (Optional)
@@ -121,11 +117,11 @@ const config = {
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   themeConfig: {
-    defaultTheme: 'business',
+    defaultTheme: 'cupcake',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: true,
+    disableSwitch: false,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -165,12 +161,12 @@ const config = {
       'night',
       'coffee',
       'winter',
-      'procyon',
+      'procyon'
     ],
 
     // Custom theme
     customTheme: {
-      primary: '#fc055b',
+      primary: '#0c343d',
       secondary: '#219aaf',
       accent: '#e8d03a',
       neutral: '#2A2730',
@@ -181,11 +177,11 @@ const config = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `By <a 
+  footer: `<a 
       class="text-primary" href="https://neurons.me"
       target="_blank"
       rel="noreferrer"
-    >neurons</a> and ❤️ me`,
+    >neurons.me</a>`,
 };
 
 export default config;
