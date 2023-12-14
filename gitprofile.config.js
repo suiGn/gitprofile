@@ -81,28 +81,28 @@ const config = {
       title: 'neurons.me',
       description:
         '.',
-      imageUrl: 'public/green_neurons_logo.png',
+      imageUrl: '/green_neurons_logo.png',
       link: 'https://neurons.me',
     },
     {
       title: 'DelPaís.mx',
       description:
         'Diversos aspectos de la sociedad: cultura, educación, periodismo, música y arte.',
-      imageUrl: 'public/representa_mexicana_siembra.delpais.mx.png',
+      imageUrl: '/representa_mexicana_siembra.delpais.mx.png',
       link: 'https://delpais.mx',
     },
     {
       title: 'FullTrailer',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'public/FullTrailer.com.mx_logo-removebg-preview.png',
+      imageUrl: '/FullTrailer.com.mx_logo-removebg-preview.png',
       link: 'https://fulltrailer.com.mx',
     },
     {
       title: 'OrgBoat',
       description:
         'OrgBoat will give you the tools you need to establish the foundation of any organization.',
-      imageUrl: 'public/orgboat_portfolio.png',
+      imageUrl: '/orgboat_portfolio.png',
       link: 'https://orgboat.me',
     }
   ],
