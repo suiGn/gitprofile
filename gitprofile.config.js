@@ -110,7 +110,7 @@ const config = {
   blog: {
     source: 'medium', // medium | dev
     username: 'suign', // to hide blog section, keep it empty
-    limit: 4, // How many posts to display. Max is 10.
+    limit: 6, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     id: 'G-TQPLSH796Z', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -121,7 +121,7 @@ const config = {
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -166,13 +166,13 @@ const config = {
 
     // Custom theme
     customTheme: {
-      primary: '#0c343d',
+      primary: '#65c3c8',
       secondary: '#219aaf',
       accent: '#e8d03a',
-      neutral: '#2A2730',
+      neutral: 'black',
       'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
+      '--rounded-box': '1rem',
+      '--rounded-btn': '1rem'
     },
   },
 
