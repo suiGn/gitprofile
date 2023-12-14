@@ -81,7 +81,7 @@ const config = {
       title: 'neurons.me',
       description:
         '.',
-      imageUrl: '/green_neurons_logo.png',
+      imageUrl: '/portfolio/green_neurons_logo.png',
       link: 'https://neurons.me',
     },
     {
