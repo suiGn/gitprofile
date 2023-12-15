@@ -80,7 +80,7 @@ const config = {
     {
       title: 'neurons.me',
       description:
-        '.',
+        'Unlock the Power of Modulation.',
       imageUrl: '/portfolio/green_neurons_logo.png',
       link: 'https://neurons.me',
     },
@@ -94,7 +94,7 @@ const config = {
     {
       title: 'FullTrailer',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        'Empowering FullTrailer Operations and Logistics...',
       imageUrl: '/portfolio/FullTrailer.com.mx_logo-removebg-preview.png',
       link: 'https://fulltrailer.com.mx',
     },
