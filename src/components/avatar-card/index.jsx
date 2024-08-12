@@ -1,6 +1,24 @@
 import PropTypes from 'prop-types';
 import { fallbackImage, skeleton } from '../../helpers/utils';
 import LazyImage from '../lazy-image';
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillMediumSquare,
+} from 'react-icons/ai';
+import {
+  FaBehanceSquare,
+  FaBuilding,
+  FaDev,
+  FaFacebook,
+  FaGlobe,
+  FaSkype,
+  FaMastodon,
+  FaStackOverflow,
+  FaTelegram,
+  FaLinkedin,
+  FaYoutube,
+} from 'react-icons/fa';
 
 const AvatarCard = ({ profile, loading, avatarRing, resume }) => {
   return (

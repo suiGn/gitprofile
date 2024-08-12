@@ -89,22 +89,24 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
             <div className="flex items-center">
               <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
                 <MdInsertLink className="my-auto" />
-                <span>{item.name}</span>
+                <span class="custom-title">{item.name}</span>
               </div>
             </div>
-            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
+            <p className="custom-description">
               {item.description}
             </p>
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
             <div className="flex flex-grow">
-              <span className="mr-3 flex items-center">
-                <AiOutlineStar className="mr-0.5" />
-                <span>{item.stargazers_count}</span>
-              </span>
+            <span className="flex items-center">
+  <AiOutlineStar
+    className={`mr-0.5 ${item.stargazers_count > 1 ? 'text-yellow-500' : ''}`}
+  />
+  <span class="gitStars">{item.stargazers_count}</span>
+</span>
               <span className="flex items-center">
                 <AiOutlineFork className="mr-0.5" />
-                <span>{item.forks_count}</span>
+                <span class="gitStars">{item.forks_count}</span>
               </span>
             </div>
             <div>
@@ -134,8 +136,8 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
                     {loading ? (
                       skeleton({ width: 'w-40', height: 'h-8' })
                     ) : (
-                      <span className="text-base-content opacity-70">
-                        GitHub Projects
+                      <span className="SectionName">
+                        Source Code
                       </span>
                     )}
                   </h5>

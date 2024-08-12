@@ -1,4 +1,4 @@
-import config from '../gitprofile.config';
+import config from '../gitprofile.config.js';
 import GitProfile from './components/GitProfile';
 
 function App() {

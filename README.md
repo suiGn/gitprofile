@@ -82,12 +82,6 @@ First Install **GitProfile** via <a href="https://www.npmjs.com/package/@arifszn
 npm install @arifszn/gitprofile
 ```
 
-Or via <a href="https://yarnpkg.com/package/@arifszn/gitprofile">Yarn</a>.
-
-```sh
-yarn add @arifszn/gitprofile
-```
-
 Then, import the package, import and style and provide the config.
 
 ```js
@@ -117,172 +111,6 @@ List of all config [here](#-customization).
 
 All the magic happens in the file `gitprofile.config.js`. Open it and modify it according to your preference.
 
-```js
-// gitprofile.config.js
-
-const config = {
-  github: {
-    username: 'suign', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
-    limit: 8, // How many projects to display.
-    exclude: {
-      forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
-    },
-  },
-  social: {
-    linkedin: '',
-    twitter: '',
-    mastodon: '',
-    facebook: '',
-    instagram: '',
-    youtube: '',
-    dribbble: '',
-    behance: '',
-    medium: '',
-    dev: '',
-    stackoverflow: '', // format: userid/username
-    website: '',
-    skype: '',
-    telegram: '',
-    phone: '',
-    email: '',
-  },
-  resume: {
-    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
-  },
-  skills: ['JavaScript', 'React.js'],
-  experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  certifications: [
-    {
-      body: 'Certification Body Name',
-      name: 'Sample Certification',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-  education: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
-  // To hide the `My Projects` section, keep it empty.
-  externalProjects: [
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
-  ],
-  // Display blog posts from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 5, // How many posts to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
-  themeConfig: {
-    defaultTheme: 'light',
-
-    // Hides the theme change switch
-    // Useful if you want to support a single color mode
-    disableSwitch: false,
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: true,
-    // Hide the ring in Profile picture
-    hideAvatarRing: false,
-    // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'procyon',
-    ],
-
-    // Custom theme
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
-  },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Copyright © 2023 John Doe`,
-};
-```
-
 ### Themes
 
 There are 30 themes available that can be selected from the dropdown.
@@ -300,9 +128,6 @@ const config = {
 };
 ```
 
-<p align="center">
-  <img src="https://arifszn.netlify.app/assets/img/hosted/gitprofile/theme-dropdown.png" alt="Theme Dropdown" width="50%">
-</p>
 
 You can create your own custom theme by modifying these values. Theme `procyon` will have the custom styles.
 
@@ -422,9 +247,7 @@ const config = {
 Empty array will hide the experience section.
 
 ### Education
-
 Provide your education history in `education`.
-
 ```js
 // gitprofile.config.js
 const config = {
@@ -445,13 +268,10 @@ const config = {
   ],
 };
 ```
-
 Empty array will hide the education section.
 
 ### Certifications
-
 Provide your industry certifications in `certifications`.
-
 ```js
 // gitprofile.config.js
 const config = {
@@ -466,7 +286,6 @@ const config = {
   ],
 };
 ```
-
 Empty array will hide the certifications section.
 
 ### Projects
@@ -492,9 +311,7 @@ const config = {
 ```
 
 #### External Projects
-
 In this section you can showcase your external/personal projects.
-
 ```js
 // gitprofile.config.js
 const config = {
@@ -511,7 +328,6 @@ const config = {
 ```
 
 ### Blog Posts
-
 If you have [medium](https://medium.com) or [dev](https://dev.to) account, you can show your recent blog posts in here just by providing your medium/dev username. You can limit how many posts to display (Max is `10`).
 
 ```js
